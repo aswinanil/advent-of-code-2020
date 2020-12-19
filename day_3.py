@@ -4,17 +4,28 @@ lines = file_handle.read().splitlines()
 width = len(lines[0])
 height = len(lines)
 
-x = 3
-y = 1
-count_trees = 0
+def get_count (x_traversal, y_traversal):
+    count_trees = 0
+    x=0
+    y=0
 
-while y < height:
-    if lines[y][x] == '#':
-        count_trees+=1
+    while y < height:
+        if lines[y][x] == '#':
+            count_trees+=1
 
-    y+=1
-    x+=3
-    if x >= width:
-        x-=width
+        y += y_traversal
+        x += x_traversal
+        if x >= width:
+            x-=width
 
-print(count_trees)
+    return count_trees
+
+# part 1
+print(get_count(3, 1))
+
+# part 2
+product = 1
+for (x, y) in [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]:
+    product *= get_count(x, y)
+
+print(product)
