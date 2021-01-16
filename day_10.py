@@ -2,7 +2,7 @@ file_handle = open('input_day_10.txt')
 jolts = [int(line) for line in file_handle.read().splitlines()]
 jolts.sort()
 
-#  part 1
+# Part 1
 count_1 = 0
 count_3 = 0
 
