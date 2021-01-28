@@ -1,6 +1,3 @@
-import pdb
-
-# file_handle = open('input_day_15_example.txt')
 file_handle = open('input_day_15.txt')
 [numbers] = [[int(num) for num in line.split(',')] for line in file_handle.read().splitlines()]
 
@@ -20,13 +17,21 @@ def speak_number(turn):
         else:
             turn_sequences[last_spoken_number].append(turn)
 
-turn_sequences = {}
+def find_nth_spoken_number(n):
+    global turn_sequences, last_spoken_number
 
-for i in range(len(numbers)):
-    turn_sequences[numbers[i]] = [i+1]
-last_spoken_number = numbers[-1]
+    turn_sequences = {}
+    for i in range(len(numbers)):
+        turn_sequences[numbers[i]] = [i+1]
+    last_spoken_number = numbers[-1]
 
-for i in range(len(numbers), 2020):
-    speak_number(i+1)
+    for i in range(len(numbers), n):
+        speak_number(i+1)
 
-print(last_spoken_number)
+    print(last_spoken_number)
+
+turn_sequences = None
+last_spoken_number = None
+
+find_nth_spoken_number(2020)  # Part 1
+find_nth_spoken_number(30000000)  # Part 2
