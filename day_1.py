@@ -1,4 +1,4 @@
-file_handle = open('day_1_input.txt')
+file_handle = open('input_day_1.txt')
 expenses_string = file_handle.readlines()
 expenses = [int(i) for i in expenses_string]
 

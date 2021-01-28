@@ -1,4 +1,4 @@
-file_handle = open('day_3_input.txt')
+file_handle = open('input_day_3.txt')
 lines = file_handle.read().splitlines()
 
 width = len(lines[0])
