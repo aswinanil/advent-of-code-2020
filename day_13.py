@@ -1,4 +1,4 @@
-file_handle = open('input_day_13.txt')
+file_handle = open('input/input_day_13.txt')
 [earliest_timing, bus_services] = file_handle.read().splitlines()
 
 # Part 1

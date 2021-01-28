@@ -1,4 +1,4 @@
-file_handle = open('input_day_10.txt')
+file_handle = open('input/input_day_10.txt')
 jolts = [int(line) for line in file_handle.read().splitlines()]
 jolts.sort()
 

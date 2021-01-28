@@ -1,4 +1,4 @@
-file_handle = open('input_day_11.txt')
+file_handle = open('input/input_day_11.txt')
 seats = [list(line) for line in file_handle.read().splitlines()]
 
 outside = ['o' for i in range(len(seats[0]))]

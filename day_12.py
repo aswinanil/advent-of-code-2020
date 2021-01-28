@@ -1,4 +1,4 @@
-file_handle = open('input_day_12.txt')
+file_handle = open('input/input_day_12.txt')
 instructions = [(line[0], int(line[1:])) for line in file_handle.read().splitlines()]
 
 angles = {

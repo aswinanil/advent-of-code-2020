@@ -1,4 +1,4 @@
-file_handle = open('input_day_15.txt')
+file_handle = open('input/input_day_15.txt')
 [numbers] = [[int(num) for num in line.split(',')] for line in file_handle.read().splitlines()]
 
 def speak_number(turn):

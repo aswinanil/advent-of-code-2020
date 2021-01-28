@@ -1,4 +1,4 @@
-file_handle = open('input_day_4.txt')
+file_handle = open('input/input_day_4.txt')
 lines = file_handle.read().split('\n\n')
 lines = [line.replace('\n', ' ') for line in lines]
 lines[-1] = lines[-1][:-1]  # end of file newline

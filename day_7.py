@@ -1,4 +1,4 @@
-file_handle = open('input_day_7.txt')
+file_handle = open('input/input_day_7.txt')
 lines = file_handle.read().splitlines()
 bags = []
 for line in lines:

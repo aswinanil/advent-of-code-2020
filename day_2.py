@@ -1,4 +1,4 @@
-file_handle = open('input_day_2.txt')
+file_handle = open('input/input_day_2.txt')
 lines = file_handle.readlines()
 lines_split = [line.split(' ') for line in lines]
 

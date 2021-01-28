@@ -1,4 +1,4 @@
-file_handle = open('input_day_5.txt')
+file_handle = open('input/input_day_5.txt')
 seats = file_handle.read().splitlines()
 
 def locateSeat(pattern, start, end, start_char):

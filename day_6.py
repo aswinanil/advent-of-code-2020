@@ -1,4 +1,4 @@
-file_handle = open('input_day_6.txt')
+file_handle = open('input/input_day_6.txt')
 groups = file_handle.read().split('\n\n')
 groups[-1] = groups[-1][:-1]  # end of file newline
 

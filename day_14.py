@@ -1,4 +1,4 @@
-file_handle = open('input_day_14.txt')
+file_handle = open('input/input_day_14.txt')
 instructions = [line.split(' = ') for line in file_handle.read().splitlines()]
 
 memory = {}

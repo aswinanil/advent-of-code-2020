@@ -1,7 +1,7 @@
 import itertools
 PRE_AMBLE_LENGTH = 25
 
-file_handle = open('input_day_9.txt')
+file_handle = open('input/input_day_9.txt')
 numbers = [int(line) for line in file_handle.read().splitlines()]
 
 def is_sum_of_two_numbers(preamble, number):
